@@ -1,11 +1,12 @@
-var App = () => (
+var App = (props) => (
   <div>
+    {console.log('props from App: ', props)}
     <Nav />
     <div className="col-md-7">
       <VideoPlayer/>
     </div>
     <div className="col-md-5">
-      <VideoList/>
+      <VideoList videos={props.videos}/>
     </div>
   </div>
 );
