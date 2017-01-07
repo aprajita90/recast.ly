@@ -1,7 +1,6 @@
 var VideoListEntry = (video) => {
   return (<div className="video-list-entry">
     <div className="media-left media-middle">
-    {console.log(video)}
       <img className="media-object" src={video.video.snippet.thumbnails.default.url} alt="" />
     }
     </div>
