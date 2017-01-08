@@ -1,7 +1,10 @@
 var VideoPlayer = (video) => {
+  console.log('video from VideoList: ', video);
+
   return (<div className="video-player">
-      <div className="embed-responsive embed-responsive-16by9">
-        <iframe className="embed-responsive-item" src={'https://www.youtube.com/embed/' + video.video.id.videoId} allowFullScreen></iframe>
+    <div className="embed-responsive embed-responsive-16by9">
+      {console.log('video from VideoList: ', video)}
+      <iframe className="embed-responsive-item" src={'https://www.youtube.com/embed/' + video.video.id.videoId} allowFullScreen></iframe>
     </div>
     <div className="video-player-details">
       <h3>{video.video.snippet.title}</h3>
